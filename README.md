@@ -120,7 +120,7 @@ ytb_joint_train | Video-Swin-B | [Model](https://drive.google.com/file/d/1SaDLcQ
 
 
 ## Output Dir
-Generally we put all outputs under a dir, Specifically, we set /mnt/data_16TB/lzy23/SOC as the output dir, so please change it to xxx/SOC.
+We put all outputs under a dir. Specifically, We set /mnt/data_16TB/lzy23/SOC as the output dir, so please change it to xxx/SOC.
 
 ## Training
 
