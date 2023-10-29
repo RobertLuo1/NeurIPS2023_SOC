@@ -4,6 +4,8 @@
 
 [Tsinghua University Intelligent Interaction Group](https://sites.google.com/view/iigroup-thu/home)
 
+<a href='https://arxiv.org/abs/2305.17011'><img src='https://img.shields.io/badge/ArXiv-2305.17011-red'></a>
+
 **Updates:**
 
 - **Nov. 29, 2023**: Code is released now.
