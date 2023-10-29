@@ -1,0 +1,218 @@
+# * Train
+lr:
+  desc: main model learning rate
+  value: 1e-4
+lr_backbone:
+  desc: backbone learning rate
+  value: 1e-5
+text_encoder_lr:
+  desc: text encoder learning rate
+  value: 5e-6
+weight_decay:
+  value: 1e-4
+# epochs:
+#   value: 30
+clip_max_norm:
+  desc: gradient clipping max norm
+  value: 0.1
+enable_amp:
+  desc: whether to enable automatic mixed precision during training
+  value: false
+seed:
+  value: 42
+
+# backbone:
+#   desc: name of backbone
+#   value: video-swin-t
+backbone_pretrained:
+  desc: whether to load pretrained weights
+  value: true
+# backbone_pretrained_path:
+#   value: "/mnt/data_16TB/lzy23/pretrained/pretrained_swin_transformer/swin_tiny_patch244_window877_kinetics400_1k.pth"
+train_backbone:
+  value: true
+use_checkpoint:
+  value: false
+with_box_refine: 
+  value: True
+
+
+# * Transformer
+DeformTransformer:
+  desc: "the parameter of the MultiFormer"
+  value:
+      ##whether use language information in Transformer
+    enc_layers: 3
+      # desc: Number of encoding layers in the transformer
+      # value: 
+    dec_layers: 3
+      # desc: Number of decoding layers in the transformer
+      # value: 3
+    dim_feedforward: 2048
+      # desc: Intermediate size of the feedforward layers in the transformer blocks
+      #value: 
+    d_model: 256
+      # desc: Size of the embeddings (dimension of the transformer)
+      #value: 
+    dropout: 0.1
+      #desc: Dropout applied in the transformer
+    nheads: 8
+      #desc: Number of attention heads inside the transformer's attentions
+      #value: 
+    num_queries: 20
+      #desc: Number of query slots
+      #value: 50
+    num_feature_levels: 4
+    dec_n_points: 4
+    enc_n_points: 4
+    two_stage: False
+
+
+# * Text Encoder (in Transformer)
+freeze_text_encoder: 
+  value: false
+  #desc: Whether to freeze the weights of the text encoder during training
+  #value: true
+text_encoder_type: 
+  value: '/mnt/data_16TB/lzy23/pretrained/pretrained_roberta'
+  #desc: text encoder to use. options - roberta-base, roberta-large, distilroberta-base
+  #value: 
+num_classes:
+  value: 1
+
+VOC:
+  desc: "the parameter of VOC"
+  value:
+    input_dim: 256
+      # desc: "the input dim of the VOC module"
+    window_size: 0
+      #desc: "the windows attention of enco layer" 
+    num_frame_queries: 20
+      # desc: "the initial query of frame"
+    num_frames: 8
+      # desc: "the frame size of the input"
+    num_queries: 20
+      # desc: the  num_queries
+    nheads: 8
+      # desc: "the head of decoder"
+      # value: 8
+    dim_feedforward: 2048
+      # desc: same as the decoder
+    enc_layers: 3
+      # desc: the encoder layer of VOC
+      # value: 2
+    dec_layers: 3
+      # desc: the decoder layer of VOC
+      # value: 3
+
+
+# * Mask Head
+mask_kernels_dim:
+  desc: number of dims in the mask prediction kernels. in CondInst paper the used size is 8.
+  value: 8
+controller_layers:
+  value: 3
+dynamic_mask_channels:
+  value: 8
+rel_coord:
+  value: true
+
+# * Loss
+aux_loss:
+  desc: enable auxiliary decoding losses (loss at each layer)
+  value: true
+
+vl_loss:
+  desc: whether using the text similarity loss
+  value: true
+
+# * Matcher
+set_cost_con:
+  desc: soft tokens coefficient in the matching cost
+  value: 0
+set_cost_cls:
+  value: 2
+set_cost_dice:
+  desc: dice coefficient in the matching cost
+  value: 5
+set_costs_box:
+  desc: the coefficient in the box matching cost
+  value: 2
+set_costs_giou:
+  desc: the coefficient in the box giou cost
+  value: 2
+
+# * Loss coefficients
+class_loss_coef:
+  value: 2
+con_loss_coef:
+  value: 1
+sigmoid_focal_loss_coef:
+  value: 2
+dice_loss_coef:
+  value: 5
+eos_coef:
+  desc: Relative classification weight of the no-object class
+  value: 0.1
+box_loss_coef:
+  value: 2
+giou_coef:
+  value: 2
+
+# * Dataset Parameters
+dataset_name:
+  value: coco
+resize_and_crop_augmentations:
+  value: true
+horizontal_flip_augmentations:
+  value: true
+random_color:
+  value: false
+train_short_size:
+  desc: size of shorter edge of input frames
+  value: 360
+train_max_size:
+  desc: max size of longer edge of input frames
+  value: 640
+eval_short_size:
+  desc: size of shorter edge of input frames
+  value: 360
+eval_max_size:
+  desc: max size of longer edge of input frames
+  value: 640
+output_dir:
+  desc: path where to save, keep empty for an auto-generated date-time labeled folder
+  value: ''
+num_workers:
+  desc: number of workers to load data
+  value: 4 #4
+
+# * Wandb
+wandb_mode:
+  desc: wandb logging mode. on - 'online', off - 'disabled'
+  value: 'disabled'
+
+### dataset
+use_random_sample:
+  desc: "whether use the random sample of using"
+  value: false
+
+batch_size:
+  desc: "total train batch size"
+  value: 7
+
+eval_batch_size:
+  desc: "total test batch size"
+  value: 8
+
+img_folder:
+  desc: "the path of dataset"
+  value: "/mnt/data_16TB/lzy23/rvosdata/coco/train2014"
+
+ann_file:
+  desc: "the path of annotations file"
+  value: '/mnt/data_16TB/lzy23/rvosdata/coco'
+
+checkpoint_path:
+  desc: the saved checkpoint path
+  value: None 
