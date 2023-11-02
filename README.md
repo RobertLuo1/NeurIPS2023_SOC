@@ -109,14 +109,14 @@ download config.json pytorch_model.bin tokenizer.json vocab.json from huggingfac
 The checkpoints are as follows:
 |Setting  | Backbone   | Checkpoint |
 |---------|------------| ---------- |
-|a2d_from_scratch | Video-Swin-T | [Model](https://drive.google.com/file/d/1ILmfHRRcOZ1CWo2l4fATF9SYYnc8ryTP/view?usp=drive_link) |
-|a2d_with_pretrain | Video-Swin-T | [Model](https://drive.google.com/file/d/1sJ40p6ql2k2JLYkUltPst-_51GdvGgC4/view?usp=drive_link) |
-|a2d_with_pretrain | Video-Swin-B | [Model](https://drive.google.com/file/d/10937_A8QUkTpD-fUjHg8_qN9HWMCXRG3/view?usp=drive_link) |
-ytb_from_scratch | Video-Swin-T | [Model](https://drive.google.com/file/d/179Xv5t1pGTbloMnjf7OurRYo7TlfpmYy/view?usp=drive_link) |
-ytb_with_pretrain | Video-Swin-T | [Model](https://drive.google.com/file/d/1YzeUonrccqyglYvMK04lrbJBDStS51lV/view?usp=drive_link) |
-ytb_with_pretrain | Video-Swin-B | [Model](https://drive.google.com/file/d/1DX47RbXKI1_INIgyxh3ZuAiRMq7rMkql/view?usp=drive_link) |
-ytb_joint_train | Video-Swin-T | [Model](https://drive.google.com/file/d/15mHrg2mry01PllEyZql9arAa6-zYHfGu/view?usp=drive_link) |
-ytb_joint_train | Video-Swin-B | [Model](https://drive.google.com/file/d/1SaDLcQOn_a1L-Bw8LGB2CiQIGkZAO3Wu/view?usp=drive_link) |
+|a2d_from_scratch | Video-Swin-T | [Model](https://drive.google.com/file/d/1ILmfHRRcOZ1CWo2l4fATF9SYYnc8ryTP/view?usp=sharing) |
+|a2d_with_pretrain | Video-Swin-T | [Model](https://drive.google.com/file/d/1sJ40p6ql2k2JLYkUltPst-_51GdvGgC4/view?usp=sharing) |
+|a2d_with_pretrain | Video-Swin-B | [Model](https://drive.google.com/file/d/10937_A8QUkTpD-fUjHg8_qN9HWMCXRG3/view?usp=sharing) |
+ytb_from_scratch | Video-Swin-T | [Model](https://drive.google.com/file/d/179Xv5t1pGTbloMnjf7OurRYo7TlfpmYy/view?usp=sharing) |
+ytb_with_pretrain | Video-Swin-T | [Model](https://drive.google.com/file/d/1YzeUonrccqyglYvMK04lrbJBDStS51lV/view?usp=sharing) |
+ytb_with_pretrain | Video-Swin-B | [Model](https://drive.google.com/file/d/1DX47RbXKI1_INIgyxh3ZuAiRMq7rMkql/view?usp=sharing) |
+ytb_joint_train | Video-Swin-T | [Model](https://drive.google.com/file/d/15mHrg2mry01PllEyZql9arAa6-zYHfGu/view?usp=sharing) |
+ytb_joint_train | Video-Swin-B | [Model](https://drive.google.com/file/d/1SaDLcQOn_a1L-Bw8LGB2CiQIGkZAO3Wu/view?usp=sharing) |
 
 
 ## Output Dir
