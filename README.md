@@ -8,7 +8,7 @@
 
 **Updates:**
 
-- **Nov. 29, 2023**: Code is released now.
+- **OCT. 29, 2023**: Code is released now.
 - **Sep. 22, 2023**: Our paper is accepted by NeurIPS 2023!
 
 ## Abstract
