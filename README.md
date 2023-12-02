@@ -1,6 +1,6 @@
 # SOC: Semantic-Assisted Object Cluster for Referring Video Object Segmentation
 
-[Zhuoyan Luo*](https://robertluo1.github.io/), [Yicheng Xiao*](https://github.com/EasonXiao-888), [Yong Liu*](https://workforai.github.io/), Shuyan Li, Yitong Wang, Yansong Tang, Xiu Li, Yujiu Yang
+[Zhuoyan Luo*](https://robertluo1.github.io/), [Yicheng Xiao*](https://easonxiao-888.github.io/), [Yong Liu*](https://workforai.github.io/), Shuyan Li, Yitong Wang, Yansong Tang, Xiu Li, Yujiu Yang
 
 [Tsinghua University Intelligent Interaction Group](https://sites.google.com/view/iigroup-thu/home)
 
