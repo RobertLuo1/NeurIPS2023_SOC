@@ -6,12 +6,12 @@
 
 <a href='https://arxiv.org/abs/2305.17011'><img src='https://img.shields.io/badge/ArXiv-2305.17011-red'></a>
 
-**Updates:**
-
+## 📢 Updates
+- **Jan. 1, 2024**: We Release the Code for the ICCV 2023 Workshop: The 5th Large-scale Video Object Segmentation Challenge.
 - **Oct. 29, 2023**: Code is released now.
 - **Sep. 22, 2023**: Our paper is accepted by NeurIPS 2023!
 
-## Abstract
+## 📖 Abstract
 This paper studies referring video object segmentation (RVOS) by boosting videolevel visual-linguistic alignment. Recent approaches model the RVOS task as
 a sequence prediction problem and perform multi-modal interaction as well as
 segmentation for each frame separately. However, the lack of a global view of
@@ -19,7 +19,7 @@ video content leads to difficulties in effectively utilizing inter-frame relatio
 enhances the segmentation stability and adaptability of our method in processing
 text expressions with temporal variations.
 
-## Framework
+## 📗 FrameWork
 <img src="asserts/framework.png" width="95%"/>
 
 ## Visualization Result
@@ -30,7 +30,7 @@ text expressions with temporal variations.
 <img src="asserts/temporal_comparison.png" width="95%">
 
 
-## Environment Setup
+## 🛠️ Environment Setup
  - install pytorch `pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113`
  - install other dependencies
   `pip install h5py opencv-python protobuf av einops ruamel.yaml timm joblib pandas matplotlib cython scipy` 
@@ -122,7 +122,7 @@ ytb_joint_train | Video-Swin-B | [Model](https://drive.google.com/file/d/1SaDLcQ
 ## Output Dir
 We put all outputs under a dir. Specifically, We set /mnt/data_16TB/lzy23/SOC as the output dir, so please change it to xxx/SOC.
 
-## Training
+## 🚀 Training
 
 ### From scratch
 We only use Video-Swin-T as backbone to train and eval the dataset.
